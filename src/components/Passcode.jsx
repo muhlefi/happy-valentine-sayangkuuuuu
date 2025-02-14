@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 // Passcode
-const CORRECT_PASSCODE = '1018' 
+const CORRECT_PASSCODE = '1507'
 
 function Passcode() {
     const [passcode, setPasscode] = useState([])
@@ -16,14 +16,14 @@ function Passcode() {
         if (newPasscode.length === 4) {
           const enteredPasscode = newPasscode.join('')
           if (enteredPasscode === CORRECT_PASSCODE) {
-            setMessage('Yayy!! :)')
+            setMessage('YAYYYYY BENAR BENAR DAPAT SERATUS')
             setTimeout(() => {
               setMessage('Redirecting...')
               navigate("/question");
               
             }, 500)
           } else {
-            setMessage('Incorrect passcode, hint: our anniversary date!')
+            setMessage('SALAAAHHHH COYYYYY WOAKODHAWUIFBHFUSDNOFUHSDIOFHDSUBFS!')
             setTimeout(() => {
               setPasscode([])
               setMessage('')
@@ -57,7 +57,7 @@ function Passcode() {
 
             {/* Message */}
             {message && (
-            <div className={`mb-4 -mt-9 text-sm font-bold ${message === 'Yayy!! :)' ? 'text-green-500' : 'text-red-500'}`}>
+            <div className={`mb-4 -mt-9 text-sm font-bold ${message === 'YAYYYYY BENAR BENAR DAPAT SERATUS' ? 'text-green-500' : 'text-red-500'}`}>
                 {message}
             </div>
             )}

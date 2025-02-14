@@ -10,7 +10,7 @@ function Recap() {
     <div className="min-h-screen bg-black/20 flex flex-col items-center justify-center p-4">
     <div className="w-full max-w-sm sm:max-w-md text-center">
       <h1 className="text-2xl sm:text-4xl font-bold mb-8 text-white drop-shadow-lg">
-        Let's recap our time together
+        btw btw banget nih, selama ini kita ngapain aja yah?
       </h1>
   
       <div className="flex flex-wrap justify-center gap-10 mb-12">
@@ -24,7 +24,7 @@ function Recap() {
               className="relative group w-20 h-20 sm:w-24 sm:h-24"
               onClick={() => navigate(path)}
             >
-              <Heart className="absolute inset-0 w-full h-full z-0 shadow-svg" />
+              <Heart className="absolute inset-0 w-full h-full z-0 shadow-svg animate-pulse" />
               <div className="absolute inset-0 flex items-center justify-center z-10">
                 <Icon color="#C67593" />
               </div>

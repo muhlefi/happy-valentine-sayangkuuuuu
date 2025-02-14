@@ -11,7 +11,7 @@ function Question() {
   const inputRef = useRef(null);
 
   // Customize your own Trending Searches
-  const trends = ['Why is my bf so cute?', 'Why does Rheina love him more?', `Rheina's birthdate (coz her bf forgets)`,]
+  const trends = ['Why is my gf so cute?', 'Why does Lefi love him more?', `Lefi's birthdate (dijadiin pw biar ngerti mwhehehe (bismillah kado))`,]
 
   const handleSearch = (e) => {
     e.preventDefault()
@@ -80,12 +80,12 @@ function Question() {
                 className="flex-1 bg-transparent outline-none"
                 autoFocus
               />
-              <Mic className="w-5 h-5 text-[#8ab4f8]" />
-              <Camera className="w-5 h-5 text-[#8ab4f8]" />
+              <Mic className="w-5 h-5 text-[#8ab4f8] cursor-pointer" />
+              <Camera className="w-5 h-5 text-[#8ab4f8] cursor-pointer" />
             </div>
           </form>
           <div className='mt-10  px-5 text-white/50'>
-            <p>Pro tip: try searching "How long have we been together?" ;)</p>
+            <p>Pro tip: Tulis iniii "How long have we been together?"</p>
           </div>
         </div>
       )}
